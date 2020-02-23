@@ -14,14 +14,15 @@ public class QuickDraftPage extends BasePage {
 		this.driver = driver;
 	}
 
-	@FindBy(how = How.XPATH, using = "//label[@for='dashboard_quick_press-hide']/child::span[text()='Quick Draft']")
+	//Elements Library
+	@FindBy(how = How.PARTIAL_LINK_TEXT, using = "Quick Draft")
 	WebElement QuickDraftPage;
-	@FindBy(how = How.XPATH, using = "//label[@for='title']")
-	WebElement Title;
+	@FindBy(how = How.ID, using = "title")
+	WebElement TitleField;
 	@FindBy(how = How.ID, using = "content")
 	WebElement Content;
 	@FindBy(how = How.ID, using = "save-post")
-	WebElement SaveDraftButton;
+	WebElement SaveDraftButton;	
     	    
 
 	  //Methods to interact with the elements
