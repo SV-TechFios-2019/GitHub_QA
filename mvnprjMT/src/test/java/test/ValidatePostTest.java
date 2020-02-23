@@ -23,9 +23,7 @@ public class ValidatePostTest {
 		//calling the method inside LoginPage
 		loginPage.login("opensourcecms", "opensourcecms");		
 		//Activate the PostDr
-		QuickDraftPage quickDraftPage = PageFactory.initElements(driver, QuickDraftPage.class);
-		//call methods inside QuickDraft Page
-		quickDraftPage.waitForPage();	
+		QuickDraftPage quickDraftPage = PageFactory.initElements(driver, QuickDraftPage.class);	
 		//Activate Quick DraftPage
 		quickDraftPage.waitForPage();	
 		//A method to input a random information into QuickDraft
