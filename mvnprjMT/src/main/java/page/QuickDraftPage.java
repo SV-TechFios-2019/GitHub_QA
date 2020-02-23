@@ -14,7 +14,7 @@ public class QuickDraftPage extends BasePage {
 		this.driver = driver;
 	}
 
-	@FindBy(how = How.XPATH, using = "//label[@for='title']")
+	@FindBy(how = How.XPATH, using = "//label[@for='dashboard_quick_press-hide']/child::span[text()='Quick Draft']")
 	WebElement QuickDraftPage;
 	@FindBy(how = How.XPATH, using = "//label[@for='title']")
 	WebElement Title;
