@@ -14,13 +14,13 @@ public class QuickDraftPage extends BasePage {
 		this.driver = driver;
 	}
 
-	@FindBy(how = How.XPATH, using = "//span[text() ='Quick Draft']")
+	@FindBy(how = How.XPATH, using = "//label[@for='title']")
 	WebElement QuickDraftPage;
-	@FindBy(how = How.ID, using = "title")
-	WebElement TitleField;
+	@FindBy(how = How.XPATH, using = "//label[@for='title']")
+	WebElement Title;
 	@FindBy(how = How.ID, using = "content")
-	WebElement ContentField;
-	@FindBy(how = How.ID, using = "savedraft")
+	WebElement Content;
+	@FindBy(how = How.ID, using = "save-post")
 	WebElement SaveDraftButton;
     	    
 
@@ -30,13 +30,13 @@ public class QuickDraftPage extends BasePage {
 	   }
 	  public void fillinQuickDraftPageForm(String title, String content) {
 		  QuickDraftPage.click();
-		  TitleField.sendKeys(title);
-		  ContentField.sendKeys(content);
+		  Title.sendKeys(title);
+		  Content.sendKeys(content);
 		  SaveDraftButton.click();
 	   }
 	   public void inputTitleAndContent(String eTitle, String eContent) {
-		   TitleField.sendKeys(eTitle);
-		     ContentField.sendKeys(eContent);
+		   Title.sendKeys(eTitle);
+		     Content.sendKeys(eContent);
 	   }	          
 	   public void clickOnSubmitButton() {
 		   SaveDraftButton.click();
