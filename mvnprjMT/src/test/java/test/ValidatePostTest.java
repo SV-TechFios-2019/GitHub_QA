@@ -34,8 +34,8 @@ public class ValidatePostTest {
         //Initiate Random Class
         Random random = new Random();    
         //Storage for Title and Content  
-        String eTitle = "TestTitle"  + String.valueOf(random.nextInt(999));
-        String eContent = String.valueOf(random.nextInt(99999));   
+        String eTitle = "Automation World"  + String.valueOf(random.nextInt(999));
+        String eContent = "Selenium with Java" + String.valueOf(random.nextInt(999)); 
         //Method to input title and content
         quickDraftPage.inputTitleAndContent(eTitle, eContent);
         //click on submit button
